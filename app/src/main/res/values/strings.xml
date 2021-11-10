@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Lab1-NAK</string>
+    <string name="app_name">Student Management System</string>
+    <string name="dev_name">Lab Project made by Nguyen Anh Khoi</string>
+    <string name="add_student">Add new student</string>
+    <string name="list_student">View all students</string>
+    <string name="student_name">Student name:</string>
+    <string name="student_score">Student score:</string>
+    <string name="confirm_add">Add</string>
+    <string name="success_add">Add successful!</string>
+    <string name="go_back">Back</string>
+    <string name="alert_fill_blanks">Please fill in all the blanks!</string>
 </resources>
