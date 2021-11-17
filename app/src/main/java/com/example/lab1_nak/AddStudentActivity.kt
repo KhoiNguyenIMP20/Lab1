@@ -23,15 +23,16 @@ class AddStudentActivity : AppCompatActivity() {
         val toast_duration = Toast.LENGTH_SHORT
         //val confirmation = findViewById<TextView>(R.id.addStatus)
         // Validation process
-        if(name.isEmpty() || score.isEmpty()){
+        if (name.isEmpty() || score.isEmpty()) {
             //confirmation.setText(R.string.alert_fill_blanks)
             //confirmation.setTextColor(resources.getColor(R.color.invalid))
-            val toast = Toast.makeText(applicationContext,R.string.alert_fill_blanks,toast_duration)
+            val toast =
+                Toast.makeText(applicationContext, R.string.alert_fill_blanks, toast_duration)
             toast.show()
         } else {
             //confirmation.setText(R.string.success_add)
             //confirmation.setTextColor(resources.getColor(R.color.success))
-            val toast = Toast.makeText(applicationContext,R.string.success_add,toast_duration)
+            val toast = Toast.makeText(applicationContext, R.string.success_add, toast_duration)
             toast.show()
         }
     }

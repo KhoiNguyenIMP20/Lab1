@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="invalid">#eb4034</color>
     <color name="success">#4aff6b</color>
+    <color name="item_container">#FFDFFFC4</color>
 </resources>

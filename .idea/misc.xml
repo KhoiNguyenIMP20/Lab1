@@ -5,7 +5,8 @@
       <map>
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/Lab1NAK/app/src/main/res/layout/activity_add_student.xml" value="0.5" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/Lab1NAK/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Lab1NAK/app/src/main/res/layout/activity_student_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Lab1NAK/app/src/main/res/layout/activity_student_list.xml" value="0.5094066570188133" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/Lab1NAK/app/src/main/res/layout/item_student.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
