@@ -1,5 +1,6 @@
 package com.example.lab1_nak
 
+import android.content.ContentValues
 import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.Color
@@ -10,6 +11,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.example.lab1_nak.MyContentProvider
 
 class AddStudentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,8 +34,21 @@ class AddStudentActivity : AppCompatActivity() {
         } else {
             //confirmation.setText(R.string.success_add)
             //confirmation.setTextColor(resources.getColor(R.color.success))
-            val toast = Toast.makeText(applicationContext, R.string.success_add, toast_duration)
-            toast.show()
+            //val toast = Toast.makeText(applicationContext, R.string.success_add, toast_duration)
+            //toast.show()
+
+            // class to add values in the database
+            val values = ContentValues()
+
+            // fetching text from user
+            values.put(MyContentProvider.name, name.toString())
+            values.put(MyContentProvider.grade, score.toString())
+
+            // inserting into database through content URI
+            contentResolver.insert(MyContentProvider.CONTENT_URI, values)
+
+            // displaying a toast message
+            Toast.makeText(applicationContext, R.string.success_add, toast_duration).show()
         }
     }
 

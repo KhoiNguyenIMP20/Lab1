@@ -38,7 +38,7 @@ class StudentAdapter(private val mStudent: List<Student>) :
         val textView = holder.nameTextView
         textView.text = student.name
         val textViewG = holder.gradeTextView
-        textViewG.text = student.grade.toString()
+        textViewG.text = student.grade
     }
 
     override fun getItemCount(): Int {
